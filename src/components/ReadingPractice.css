@@ -1,0 +1,87 @@
+.reading-practice {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.practice-header {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.practice-header h2 {
+  font-size: 2.5rem;
+  margin: 0 0 10px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.practice-header p {
+  font-size: 1.2rem;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.text-selector {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+.text-selector label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.text-dropdown {
+  padding: 12px 20px;
+  border: 2px solid #e0e0e0;
+  border-radius: 25px;
+  font-size: 1rem;
+  background: white;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 250px;
+}
+
+.text-dropdown:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(103, 126, 234, 0.2);
+}
+
+.text-dropdown:hover {
+  border-color: #667eea;
+}
+
+@media (max-width: 768px) {
+  .reading-practice {
+    padding: 0 15px;
+  }
+  
+  .practice-header h2 {
+    font-size: 2rem;
+  }
+  
+  .practice-header p {
+    font-size: 1rem;
+  }
+  
+  .text-selector {
+    padding: 15px;
+  }
+  
+  .text-dropdown {
+    min-width: 200px;
+    font-size: 0.9rem;
+  }
+}

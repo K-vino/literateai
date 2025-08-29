@@ -1,0 +1,129 @@
+.text-display {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 25px;
+  margin: 20px 0;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.text-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.text-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.legend {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+}
+
+.legend-color.correct {
+  background-color: #4CAF50;
+}
+
+.legend-color.incorrect {
+  background-color: #f44336;
+}
+
+.legend-color.default {
+  background-color: #e0e0e0;
+}
+
+.text-content {
+  font-size: 1.4rem;
+  line-height: 2;
+  color: #333;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: rgba(248, 249, 250, 0.8);
+  border-radius: 10px;
+  border-left: 4px solid #667eea;
+}
+
+.word {
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  cursor: help;
+}
+
+.word.correct {
+  background-color: rgba(76, 175, 80, 0.3);
+  color: #2e7d32;
+  border: 1px solid rgba(76, 175, 80, 0.5);
+}
+
+.word.incorrect {
+  background-color: rgba(244, 67, 54, 0.3);
+  color: #c62828;
+  border: 1px solid rgba(244, 67, 54, 0.5);
+}
+
+.word:hover {
+  transform: scale(1.05);
+}
+
+.reading-tips {
+  background: rgba(103, 126, 234, 0.1);
+  border-radius: 8px;
+  padding: 15px;
+  border-left: 4px solid #667eea;
+}
+
+.reading-tips p {
+  margin: 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .text-display {
+    padding: 20px;
+    margin: 15px 0;
+  }
+  
+  .text-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .text-content {
+    font-size: 1.2rem;
+    padding: 15px;
+  }
+  
+  .legend {
+    gap: 10px;
+  }
+  
+  .legend-item {
+    font-size: 0.8rem;
+  }
+}
